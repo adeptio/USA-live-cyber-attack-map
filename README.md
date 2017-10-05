@@ -73,6 +73,6 @@ could enrich the dataset.
 [honeypot]: https://en.wikipedia.org/wiki/Honeypot_(computing)
 [whois]: https://www.ultratools.com/tools/ipWhoisLookup
 [wpack]: https://webpack.js.org/
-[intro]: http://introjs.com/
+[intro]: https://introjs.com/
 
 [page]: ./docs/images/page.png "main page"
