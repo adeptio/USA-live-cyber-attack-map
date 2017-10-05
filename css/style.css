@@ -6,29 +6,35 @@ html, body {
   background-color: black;
 }
 
+table, th, td {
+    border: 1px solid #00ff00;
+}
+
 main {
   height: 100vh;
 }
 
 tr {
-  color: #f6f1ed;
+  color: #00ff00;
 }
 
 tr:nth-child(odd) {
-  background: #963019;
+  background: black;
 }
 
 tr:nth-child(even) {
-  background: #16174f;
+  background: black;
 }
 
 h1 {
   margin-bottom: 5px;
+  color: #00ff00;
 }
 
 h3 {
   margin-top: 5px;
   margin-bottom: 28px;
+  color: #00ff00;
 }
 
 #enterIntro {
@@ -36,18 +42,18 @@ h3 {
   font-weight: bold;
   font-size: 16px;
   cursor: pointer;
-  border-color: #16174f;
+  border-color: #00ff00;
   border-width: 1px;
-  background-color: #16174f;
+  background-color: black;
   margin-bottom: 2%;
-  color: ghostwhite;
+  color: #00ff00;
 }
 
 #header {
   display: flex;
   justify-content: center;
   width: 100%;
-  background: #963019;
+  background: black;
   color: #f6f1ed;
 }
 
@@ -68,12 +74,13 @@ h3 {
   display: flex;
   align-items: center;
   margin-top: 2%;
-  background-color: #963019;
+  background-color: black;
+  border-color: #00ff00;
 }
 
 #page-links span {
   width: 100%;
-  background: #963019;
+  background: black;
   display: flex;
   color: ghostwhite;
   margin-left: 1%;
@@ -84,7 +91,7 @@ h3 {
 #footer-links {
   display: flex;
   justify-content: space-around;
-  background-color: #963019;
+  background-color: black;
   width: 10%;
 }
 
@@ -102,7 +109,7 @@ div#output {
   padding: 6px;
   width: 800px;
   height: 600px;
-  border: 1px solid #963019;
+  border: 1px solid #00ff00;
   border-radius: 3px;
   font-size: small;
   overflow: scroll;
@@ -141,7 +148,7 @@ div#output > div {
 }
 
 #feed-container {
-  color: white;
+  color: #00ff00;
   display: flex;
   width: 45%;
   margin-left: 1%;
