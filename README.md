@@ -20,7 +20,7 @@ It is important to note that IPs can be [altered][spoof] easily - so origin data
 - Table shows top malware attack types.
 - Table shows top countries targeted.        
 
-## Wireframes
+## Snapshot
 
 All data for the app will come from the RT feed, the site will consist of one main page.    
 
