@@ -1,0 +1,166 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Arvo', serif;
+  background-color: black;
+}
+
+main {
+  height: 100vh;
+}
+
+tr {
+  color: #f6f1ed;
+}
+
+tr:nth-child(odd) {
+  background: #963019;
+}
+
+tr:nth-child(even) {
+  background: #16174f;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 28px;
+}
+
+#enterIntro {
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #16174f;
+  border-width: 1px;
+  background-color: #16174f;
+  margin-bottom: 2%;
+  color: ghostwhite;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: #963019;
+  color: #f6f1ed;
+}
+
+#header-intro {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#header-intro h1 {
+  text-align: center;
+}
+
+#page-links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  background-color: #963019;
+}
+
+#page-links span {
+  width: 100%;
+  background: #963019;
+  display: flex;
+  color: ghostwhite;
+  margin-left: 1%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: space-around;
+  background-color: #963019;
+  width: 10%;
+}
+
+#footer-links a {
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+p {
+  margin: 10px 0px 5px 0px;
+  text-align: center;
+}
+div#output {
+  padding: 6px;
+  width: 800px;
+  height: 600px;
+  border: 1px solid #963019;
+  border-radius: 3px;
+  font-size: small;
+  overflow: scroll;
+}
+div#output > div {
+  padding: 4px 0;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#data-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#map-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #16174f;
+}
+
+#lower-container {
+  margin-top: 3px;
+  z-index: 1;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#feed-container {
+  color: white;
+  display: flex;
+  width: 45%;
+  margin-left: 1%;
+}
+
+#feed-container p {
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+#tally-container {
+  height: 550px;
+  width: 22.5%;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow-y: scroll;
+}
+
+#map {
+   height: 600px;
+   width: 100%;
+  }
