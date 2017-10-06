@@ -50,4 +50,4 @@ Day 3-4:
 
 [honeypot]: https://en.wikipedia.org/wiki/Honeypot_(computing)
 [spoof]: https://en.wikipedia.org/wiki/IP_address_spoofing
-[page]: ./docs/images/page.png "main page"
+[page]: ./images/page.png "main page"

@@ -6,7 +6,7 @@ Overall structure, parsing, and data aggregation.
 
 ## [Satori][satori]
 
-Platform where data owners create channels that developers can subscribe to for a RT stream of JSON.  Satori provides RTM SDKs as a foundation for creating mobile, web-based, embedded or server applications communicating with RTM (realtime messaging service at the core of the Satori platform).
+Platform where data owners create channels that developers can subscribe to for a real time stream of JSON.  Satori provides RTM SDKs as a foundation for creating mobile, web-based, embedded or server applications communicating with RTM (realtime messaging service at the core of the Satori platform).
 
 ## [Google Maps API][google]
 

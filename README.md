@@ -11,7 +11,7 @@ It is important to note that IPs can be [altered][spoof] easily - so origin data
 
 ThreatWave is a personal project by Mike Brinkman.
 
-![ThreatWave home page: https://adeptio.github.io/USA-live-cyber-attack-map/][home page]
+![ThreatWave home page: https://adeptio.github.io/ThreatWave/][home page]
 
 ## Features
 
@@ -43,7 +43,7 @@ ThreatWave is only a few degrees above being considered an MVP.
 
 The features that will be added are listed in the [future implementations][future] outline.
 
-[threatwave]: https://adeptio.github.io/USA-live-cyber-attack-map/
+[threatwave]: https://adeptio.github.io/ThreatWave/
 [home page]: ./docs/images/page.png "ThreatWave home page"
 
 [proposal]: ./docs/README_DEV.md
