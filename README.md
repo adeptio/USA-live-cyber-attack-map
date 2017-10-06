@@ -1,78 +1,55 @@
-# USA-live-cyber-attack-map
-Origin of attack === USA
+# ThreatWave
 
-## Background & Overview
-
-This application receives data on malicious internet traffic originating in the USA in real time (RT), visualizes its origin with Google Maps, and provides informative tables.
+[ThreatWave][threatwave] receives data on malicious internet traffic originating in the USA in real time, visualizes its origin with Google Maps, and provides informative tables.
 
 Information security companies install '[honeypots][honeypot]' (intentionally vulnerable networks) in various countries to
 collect malware samples.  Honeypots appear to have valuable data, but in reality contain software to capture or log malware
 activity.  Data of interest to a research honeypot could be origin IP, geolocation, protocol, and port.  Most of the data
 provided to this application is the product of research honeypots staffed by various organizations.     
 
-It is important to note that IPs can be [altered][spoof] easily - so origin data should not be taken as definitive.  
+It is important to note that IPs can be [altered][spoof] easily - so origin data should not be taken as definitive.
 
-## Functionality & MVP
+ThreatWave is a personal project by Mike Brinkman.
+
+![ThreatWave home page: https://adeptio.github.io/USA-live-cyber-attack-map/][home page]
+
+## Features
 
 - Google map drops custom points at attack origins in real time.  Points display attack info when clicked.  
-- Feed shows JSON data in RT.
-- Table shows 'top attackers' based on origin of malicious traffic.  (All tables update and sort in RT)
-- Table shows top malware attack types.
-- Table shows top countries targeted.        
+- Feed shows JSON data as the app processes it.
+- Tables show:
+  - Top attackers based on origin of malicious packets.  (All tables update and sort in real time)
+  - Top malware attack types.
+  - Top countries targeted.
+- Guided website tour for new users.
 
-## Snapshot
+## Project Design
 
-All data for the app will come from the RT feed, the site will consist of one main page.    
+ThreatWave was designed and built in three days.  All data is stored
 
-![page][page]
+A [proposal][proposal] was drafted to help provide an implementation timeline during the development process.
 
-## Technologies
+## Technology
 
-- Vanilla Javascript for overall structure, parsing, and data aggregation.    
-- [Satori][satori]: Platform where data owners create channels that developers can subscribe to for a RT stream of JSON.  Satori provides RTM SDKs as a foundation for creating mobile, web-based, embedded or server applications communicating with RTM (realtime messaging service at the core of the Satori platform).
-- [Google Maps API][google]: Allows access to Google's powerful and elegant map application for plotting data and visualization.
-- [intro.js][intro]: 'Tour Website' functionality
-- [webpack][wpack]: module bundler
+ThreatWave is a single-page application built primarily with vanilla JavaScript and libraries made to work with it.  
 
+- [Frontend technology][frontend]
 
-## Implementation Timeline
+## Future Implementations
 
-Over the weekend:
+ThreatWave is only a few degrees above being considered an MVP.
 
-- Set up Satori RT feed
-  - Get permanent API keys
-  - Filter data appropriately    
+The features that will be added are listed in the [future implementations][future] outline.
 
-Day 1:
+[threatwave]: https://adeptio.github.io/USA-live-cyber-attack-map/
+[home page]: ./docs/images/page.png "ThreatWave home page"
 
-- Create logic for data tables
-- Overall CSS
+[proposal]: ./docs/README_DEV.md
 
-Day 2:
+[frontend]: ./docs/frontend.md
 
-- Research Google Maps Javascript API
-
-Day 3-4:
-
-- Implement Google Maps visualization for RT data
-- Polishing of visualization and CSS
+[future]: ./docs/future.md
 
 
-## Bonus features
-
-- More advanced Google Maps visualizations
-- The 'attacker' field of received data is often blank when no infosec company or
-criminal organization is known to operate with that IP.  A function to query
-these IPs against a database like the [WHOIS IP Lookup Tool][whois] for identity information
-could enrich the dataset.  
-
-
-[satori]: https://www.satori.com/
-[google]: https://developers.google.com/maps/documentation/javascript/
 [spoof]: https://en.wikipedia.org/wiki/IP_address_spoofing
 [honeypot]: https://en.wikipedia.org/wiki/Honeypot_(computing)
-[whois]: https://www.ultratools.com/tools/ipWhoisLookup
-[wpack]: https://webpack.js.org/
-[intro]: https://introjs.com/
-
-[page]: ./docs/images/page.png "main page"
