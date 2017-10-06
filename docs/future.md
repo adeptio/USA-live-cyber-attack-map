@@ -1,4 +1,4 @@
-## Bonus features
+# Future Implementations
 
 - More advanced Google Maps visualizations
 - The 'attacker' field of received data is often blank when no infosec company or

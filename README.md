@@ -1,6 +1,6 @@
 # ThreatWave
 
-[ThreatWave][threatwave] receives data on malicious internet traffic originating in the USA in real time, visualizes its origin with Google Maps, and provides informative tables.
+[ThreatWave][threatwave] receives data on malicious internet traffic originating in the USA in real time, visualizes its path with Google Maps, and provides informative tables.
 
 Information security companies install '[honeypots][honeypot]' (intentionally vulnerable networks) in various countries to
 collect malware samples.  Honeypots appear to have valuable data, but in reality contain software to capture or log malware
@@ -15,23 +15,25 @@ ThreatWave is a personal project by Mike Brinkman.
 
 ## Features
 
-- Google map drops custom points at attack origins in real time.  Points display attack info when clicked.  
+- Google Maps API visualizes packet data:
+  - Custom pins are dropped at attack origins in real time, and display attack info when clicked.
+  - Lines with arrow animations are drawn between origin and target geolocation.  
 - Feed shows JSON data as the app processes it.
 - Tables show:
   - Top attackers based on origin of malicious packets.  (All tables update and sort in real time)
   - Top malware attack types.
   - Top countries targeted.
-- Guided website tour for new users.
+- Guided website tour shows new users how to view the app.  
 
 ## Project Design
 
-ThreatWave was designed and built in three days.  All data is stored
+ThreatWave was designed and built in three days.
 
 A [proposal][proposal] was drafted to help provide an implementation timeline during the development process.
 
 ## Technology
 
-ThreatWave is a single-page application built primarily with vanilla JavaScript and libraries made to work with it.  
+ThreatWave is a single-page application built primarily with vanilla JavaScript and associated libraries.    
 
 - [Frontend technology][frontend]
 
