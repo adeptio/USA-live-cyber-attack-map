@@ -1,5 +1,5 @@
 var endpoint = "wss://open-data.api.satori.com";
-var appkey = "4C83c2aC7c8B11cdaE0CA5fDdC36a03C"; // check weekly for new public api key
+var appkey = "Fd1A23752B4eCbD8Ec8E131171CdD0a8"; // check weekly for new public api key
 var channelName = "live-cyber-attack-threat-map";
 
 var client = new RTM(endpoint, appkey);
