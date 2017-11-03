@@ -73,9 +73,9 @@ function sortTable(tableName) {
 }
 
 
-client.on("enter-connected", function () {
-  showText("Connected to Satori RTM!");
-});
+// client.on("enter-connected", function () {
+//   showText("Connected to Satori RTM!");
+// });
 client.on("leave-connected", function () {
   showText("Disconnected from Satori RTM");
 });
@@ -84,7 +84,7 @@ client.on("error", function (error) {
   if (error.body) {
     reason = error.body.error + " - " + error.body.reason;
   } else {
-    reason = "unknown reason";
+    reason = "As of October 2017, Satori has disabled this feed.";
   }
   showText("RTM client failed: " + reason);
 });
