@@ -98,7 +98,8 @@ subscription.on("enter-subscribed", function() {
   showText("Subscribed to the channel: " + channelName);
 });
 subscription.on("rtm/subscribe/error", function(pdu) {
-  showText("Failed to subscribe: " + pdu.body.error + " - " + pdu.body.reason);
+  // showText("Failed to subscribe: " + pdu.body.error + " - " + pdu.body.reason);
+  showText("As of October 2017, Satori has disabled this feed.");
 });
 subscription.on("rtm/subscription/data", function(pdu) {
   // Messages arrive in an array.
