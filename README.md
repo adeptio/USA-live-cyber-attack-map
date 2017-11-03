@@ -1,5 +1,7 @@
 # ThreatWave
 
+### As of October 2017, Satori disabled this open data channel.  
+
 [ThreatWave][threatwave] receives data on malicious internet traffic originating in the USA in real time, visualizes its path with Google Maps, and provides informative tables.
 
 Information security companies install '[honeypots][honeypot]' (intentionally vulnerable networks) in various countries to
