@@ -82,7 +82,8 @@ client.on("leave-connected", function () {
 client.on("error", function (error) {
   var reason;
   if (error.body) {
-    reason = error.body.error + " - " + error.body.reason;
+    // reason = error.body.error + " - " + error.body.reason;
+    showText("As of October 2017, Satori has disabled this feed.");
   } else {
     reason = "As of October 2017, Satori has disabled this feed.";
   }
