@@ -86,7 +86,8 @@ client.on("error", function (error) {
   } else {
     reason = "As of October 2017, Satori has disabled this feed.";
   }
-  showText("RTM client failed: " + reason);
+  // showText("RTM client failed: " + reason);
+  showText("As of October 2017, Satori has disabled this feed.");
 });
 
 var subscription = client.subscribe(channelName, RTM.SubscriptionMode.SIMPLE, {
